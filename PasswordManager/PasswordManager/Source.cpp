@@ -40,7 +40,7 @@ int main()
 	char path[] = "EPasswords.txt";
 
 	
-	string main_pass;				//главный пароль для открытия зашифрованных паролей + доступа к файлу
+	string main_pass;				//main password for decrypt passwords and scan from file
 
 	
 
