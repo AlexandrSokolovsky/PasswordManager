@@ -5,9 +5,9 @@ private:
 		
 	string pass_name;
 	int length;	
-	int count_passwords = 0;
+	
 
-	struct keys     //Ключи для создания пароля
+	struct keys     //Keys for making password
 	{
 		bool numbers,
 			low_letter,
@@ -18,16 +18,16 @@ private:
 public:
 	struct all_data
 	{		
-		string pass_name;		//имя пароля ( для чего он нужен)
-		int length;			//длина пароля
-		bool real=0;		//хз
-		string depass;	//расшифрованный пароль		
-		string epass;    //зашифрованный пароль
-		int count_passwords = 0;	//кол-ва пароль (хз зачем нужен)
-
-		bool numbers,		//ключи
-			low_letter,
-			cap_letter;
+		string pass_name;		//password's name
+		int length;			//password's length
+		bool real=0;		//to know encrypted or decrypted password is
+		string depass;	//decrypted password	
+		string epass;    //encrypted password
+		 	
+					//keys
+		bool numbers,			//use 0-9?     0/1
+			low_letter,		//use a-z?     0/1
+			cap_letter;		//use A-Z?     0/1
 		
 	}data;
 
